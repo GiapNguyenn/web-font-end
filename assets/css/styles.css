@@ -1,0 +1,843 @@
+body {
+  background-color: #f9f9fa;
+}
+
+/* ============Header============ */
+header {
+  background-color: #f8f8f8;
+}
+
+header .container {
+  width: 100%; /* Phủ toàn bộ chiều ngang */
+  padding: 0; /* Loại bỏ khoảng cách thừa */
+  margin: 0; /* Đảm bảo không có lề */
+}
+
+.top-bar,
+.navbar {
+  width: 100%;
+}
+.top-bar {
+  background-color: #f8f8f8;
+  padding: 10px 110px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.top-bar i {
+  margin-right: 5px;
+}
+.top-bar span {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #2f5d31;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar img {
+  max-height: 60px;
+  margin-right: 20px;
+  margin-left: 110px;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 355px;
+  margin: 10px auto;
+}
+
+.search-bar input {
+  margin-left: -110px;
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.search-bar input:focus {
+  border-color: #2f5d31;
+  box-shadow: 0 0 5px rgba(47, 93, 49, 0.5);
+}
+
+.search-bar .search-icon {
+  margin-right: 110px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: invert(0.5);
+}
+
+.search-bar .search-icon:hover {
+  filter: invert(1);
+}
+
+.nav-links {
+  margin-right: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 27px; /* Khoảng cách giữa các phần tử */
+}
+.nav-links .cart {
+  margin-left: -110px; /* Giảm khoảng cách giữa "LIÊN HỆ" và giỏ hàng */
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.cart-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 5px 10px;
+  }
+}
+
+/* ===========Lưu trữ pag================ */
+.fui-basic-breadcrumb .breadcrumb-list,
+.fui-basic-breadcrumb .breadcrumb-link,
+.fui-basic-breadcrumb .breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+}
+.fui-basic-breadcrumb .breadcrumb-list {
+  gap: 12px;
+  margin-left: 100px;
+  margin-top: 41px;
+}
+.fui-basic-breadcrumb .breadcrumb-item {
+  gap: 8px;
+}
+.fui-basic-breadcrumb .breadcrumb-item svg {
+  height: 20px;
+}
+.fui-basic-breadcrumb .breadcrumb-item:last-child {
+  cursor: text;
+}
+.fui-basic-breadcrumb .breadcrumb-item:last-child .breadcrumb-link {
+  pointer-events: none;
+  color: #9ca3af;
+}
+.fui-basic-breadcrumb .breadcrumb-link {
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: linear 0.2s;
+  text-transform: capitalize;
+}
+.fui-basic-breadcrumb .breadcrumb-link svg {
+  height: 16px;
+}
+.fui-basic-breadcrumb .breadcrumb-link:hover {
+  color: #e11d48;
+}
+/* ==================================== */
+/* ===============Button chuyen trang=================== */
+.nav-container {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  gap: 16px;
+  font: 600 16px Segoe UI, sans-serif;
+  margin-left: 97px;
+}
+
+.nav-item {
+  align-self: stretch;
+  flex-basis: auto;
+  margin: auto 0;
+  color: var(--Neutral-2, #52575c);
+  text-transform: uppercase;
+}
+
+.nav-item-active {
+  border-radius: 4px;
+  background: var(--Main-2, #3ab54a);
+  color: #fff;
+  text-align: center;
+  padding: 4px 5px;
+}
+/* ==================Tin khuyen mai======================== */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ==========css row======= */
+.row{
+  margin-left: 88px;
+  margin-right: 112px;
+}
+/* ===========css cột bên trái=================== */
+.promotion-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #52575c;
+  font: 400 16px Segoe UI, sans-serif;
+}
+
+.promotion-header {
+  border-radius: 4px 4px 0 0;
+  background: #a0a4a8;
+  margin-top: 21px;
+  color: #fff;
+  font: 600 16px Segoe UI, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 70px;
+}
+
+.about-section {
+  background: rgba(58, 181, 74, 0.1);
+  margin-top: 4px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-link {
+  color: #3ab54a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.policy-section {
+  background: #f9f9fa;
+  margin-top: 8px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policy-link {
+  color: #52575c;
+  text-decoration: none;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+/* =============css cột giữa================== */
+.featured-section {
+  display: flex;
+  margin-top: 23px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.header-nav {
+  align-self: start;
+  display: flex;
+  gap: 46px;
+  text-transform: capitalize;
+  font: 600 16px Segoe UI, sans-serif;
+}
+
+.featured-tab {
+  display: flex;
+  flex-direction: column;
+  color: #3ab54a;
+}
+
+.tab-indicator {
+  background: #3ab54a;
+  margin-top: 4px;
+  width: 128px;
+  height: 2px;
+}
+
+.latest-tab {
+  color: #52575c;
+}
+
+.hero-image {
+  aspect-ratio: 1.8;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+
+.article-title {
+  color: #52575c;
+  margin-top: 30px;
+  font: 700 18px Inter, sans-serif;
+}
+
+.article-excerpt {
+  color: #52575c;
+  margin: 7px 22px 0 0;
+  font: 400 14px/21px Segoe UI, sans-serif;
+}
+
+.divider {
+  background-color: #e8e8e8;
+  margin-top: 21px;
+  height: 1px;
+  border: 1px solid #e8e8e8;
+}
+
+.article-card {
+  margin-top: 20px;
+  width: 634px;
+  max-width: 100%;
+}
+
+.card-content {
+  gap: 20px;
+  display: flex;
+}
+
+.image-column {
+  width: 36%;
+}
+
+.thumbnail {
+  aspect-ratio: 1.45;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.text-column {
+  width: 64%;
+  margin-left: 20px;
+}
+
+.card-body {
+  display: flex;
+  margin-top: 20px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: start;
+  font: 400 14px Segoe UI, sans-serif;
+}
+
+.card-title {
+  color: #52575c;
+  font: 700 16px Inter, sans-serif;
+}
+
+.card-excerpt {
+  color: #52575c;
+  line-height: 21px;
+  margin-top: 22px;
+}
+
+.card-meta {
+  color: #3ab54a;
+  margin-top: 12px;
+}
+
+.highlight {
+  color: #3ab54a;
+}
+
+@media (max-width: 991px) {
+  .featured-section {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero-image,
+  .divider {
+    max-width: 100%;
+  }
+
+  .article-excerpt {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .image-column,
+  .text-column {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .thumbnail {
+    margin-top: 20px;
+  }
+
+  .card-body {
+    margin-top: 40px;
+  }
+}
+/* ===============cột bên phai================ */
+.news-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+.news-header {
+  align-self: stretch;
+  display: flex;
+  gap: 20px;
+  color: #333;
+  justify-content: space-between;
+  font: 600 20px Segoe UI, sans-serif;
+}
+.news-title {
+  align-self: end;
+  margin-top: 125px;
+}
+.news-item {
+  display: flex;
+  margin-top: 17px;
+  align-items: start;
+  gap: 16px;
+  font: 14px Segoe UI, sans-serif;
+}
+.news-thumbnail {
+  aspect-ratio: 1.23;
+  object-fit: contain;
+  object-position: center;
+  width: 81px;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+}
+.news-headline {
+  color: #333;
+  font: 600 14px/21px Segoe UI, sans-serif;
+}
+.news-date {
+  color: #828282;
+  margin-top: 4px;
+}
+.news-group {
+  display: flex;
+  margin-top: 12px;
+  align-items: start;
+  gap: 15px;
+}
+.thumbnail-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.banner-image {
+  aspect-ratio: 0.95;
+  object-fit: contain;
+  object-position: center;
+  width: 300px;
+  margin-top: 25px;
+  max-width: 100%;
+}
+.promo-image {
+  aspect-ratio: 0.95;
+  object-fit: contain;
+  object-position: center;
+  width: 300px;
+  margin-top: 20px;
+  max-width: 100%;
+}
+/* ===================chuyển page====================== */
+.fui-roundedFull-pagination .pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 40px;
+}
+.fui-roundedFull-pagination .pagination-link {
+  display: block;
+  min-width: 32px;
+  height: 32px;
+  padding-inline: 6px;
+  border-radius: 100rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  user-select: none;
+  color: black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.fui-roundedFull-pagination .pagination-link:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.fui-roundedFull-pagination .pagination-link.selected {
+  background-color: #1dc071;
+  color: white;
+}
+/* ===================footer==================== */
+/* =============Text đối tác================== */
+.partners-heading {
+  color: rgba(0, 84, 36, 1);
+  text-align: center;
+  align-self: center;
+  margin: 86px 0 0;
+  font: 700 32px/1 SFU Angie, sans-serif;
+}
+/* ===============Logo đối tác=================== */
+.partners-container {
+  align-self: center;
+  display: flex;
+  margin: 45px auto 0;
+  width: 1264px;
+  max-width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo-arrow {
+  aspect-ratio: 0.56;
+  object-fit: contain;
+  object-position: center;
+  width: 9px;
+  margin: auto 0;
+}
+
+.logo-wrapper {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 56px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.logo-image {
+  aspect-ratio: 1.79;
+  object-fit: contain;
+  object-position: center;
+  width: 84px;
+}
+
+.logo-wrapper-large {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.logo-image-large {
+  aspect-ratio: 1.81;
+  object-fit: contain;
+  object-position: center;
+  width: 176px;
+  z-index: 10;
+  margin-top: -20px;
+}
+
+.logo-wrapper-medium {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 56px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.logo-image-medium {
+  aspect-ratio: 1.64;
+  object-fit: contain;
+  object-position: center;
+  width: 102px;
+  z-index: 10;
+  max-width: 100%;
+}
+
+.logo-wrapper-wide {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 56px;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.logo-image-wide {
+  aspect-ratio: 4.1;
+  object-fit: contain;
+  object-position: center;
+  width: 168px;
+}
+/* ============các ưu đãi dịch vụ======================== */
+.features-container {
+  background-color: rgba(0, 121, 52, 1);
+  display: flex;
+  margin-top: 22px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f2f2;
+  text-transform: capitalize;
+  padding: 24px;
+  font: 700 10px/1 Roboto, sans-serif;
+}
+
+.features-grid {
+  display: flex;
+  width: 1085px;
+  max-width: 100%;
+  gap: 17px;
+}
+
+.feature-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 40px;
+  align-self: start;
+}
+
+.feature-icon-quality {
+  aspect-ratio: 0.8;
+  width: 32px;
+}
+
+.feature-title {
+  flex-grow: 1;
+  margin: auto 0;
+}
+
+.feature-title-quality {
+  width: 186px;
+}
+
+.feature-title-service {
+  width: 190px;
+}
+
+.feature-title-shipping {
+  width: 179px;
+}
+
+.feature-title-warranty {
+  width: 154px;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 42px;
+  border: 1px solid #ffffff;
+}
+/* ===============chân trang================= */
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-section {
+  margin-left: 277px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto Condensed, sans-serif;
+}
+.company-logo {
+  width: 117px;
+  max-width: 100%;
+}
+.sales-hotline-title {
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 14px;
+  margin-right: 106px;
+}
+.phone-container {
+  display: flex;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #007934;
+  text-align: center;
+  line-height: 0.6;
+}
+.phone-icon {
+  width: 40px;
+}
+.phone-number {
+  font-size: 24px;
+  width: 160px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.support-info {
+  display: flex;
+  margin-top: 13px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 44px 0 3px;
+}
+.business-hours {
+  color: #b9b9b9;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+.customer-support-title {
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 16px;
+}
+.support-phone {
+  display: flex;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #007934;
+  text-align: center;
+  line-height: 0.6;
+}
+.footer-section {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  font-size: 14px;
+  color: #a0a4a8;
+  line-height: 1;
+}
+.section-title {
+  color: #4f4f4f;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
+.footer-link {
+  margin-top: 14px;
+  cursor: pointer;
+}
+.footer-link-first {
+  margin-top: 24px;
+  cursor: pointer;
+}
+.contact-section {
+  display: flex;
+  margin-top: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #828282;
+  line-height: 1;
+}
+.contact-title {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-left: 24px;
+}
+.address-container {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  line-height: 18px;
+}
+.contact-icon {
+  width: 20px;
+  margin: auto 0;
+}
+.address-text {
+  width: 450px;
+}
+.contact-info {
+  display: flex;
+  margin-top: 7px;
+  gap: 12px;
+}
+.email-container {
+  display: flex;
+  margin-top: 14px;
+  gap: 14px;
+  white-space: nowrap;
+}
+.email-icon {
+  width: 16px;
+}
