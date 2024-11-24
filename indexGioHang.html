@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assetsGioHang/css/reset.css" />
+    <link rel="stylesheet" href="./assetsGioHang/css/base.css" />
+    <link rel="stylesheet" href="./assetsGioHang/css/styles.css" />
+  </head>
+  <body>
+    <!-- =====phần đầu======= -->
+    <header>
+      <div class="container">
+        <div class="top-bar">
+          <span>
+            <i class="fas fa-phone-alt"></i>
+            Hotline:
+            <strong>0912 250 625</strong>
+          </span>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            Cây Xanh Haluta
+          </span>
+        </div>
+        <div class="navbar">
+          <img
+            alt="Haluta logo"
+            height="61"
+            src="./imgGioHang/LOGO HALUTA-05 1.png"
+            width="90"
+          />
+          <div class="search-bar">
+            <input placeholder="Bạn cần tìm kiếm gì" type="text" />
+            <img
+              class="search-icon"
+              src="./iconGioHang/search-icon.svg"
+              alt="Search"
+            />
+          </div>
+          <div class="nav-links">
+            <a href="#">TRANG CHỦ</a>
+            <a href="#">GIỚI THIỆU</a>
+            <a href="#">DỰ ÁN</a>
+            <a href="#">CÂY XANH</a>
+            <a href="#">BLOG TƯ VẤN</a>
+            <a href="#">LIÊN HỆ</a>
+            <div class="cart">
+              <a href="#">
+                <img class="cart-icon" src="./iconGioHang/shopping cart.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========luu page đang đến========== -->
+    <div class="fui-basic-breadcrumb">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"
+              ></path>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M9.793 7.793a1 1 0 000 1.414L12.586 12l-2.793 2.793a1 1 0 101.414 1.414l3.5-3.5a1 1 0 000-1.414l-3.5-3.5a1 1 0 00-1.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <a href="#" class="breadcrumb-link">Shop</a>
+        </li>
+        <li class="breadcrumb-item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M9.793 7.793a1 1 0 000 1.414L12.586 12l-2.793 2.793a1 1 0 101.414 1.414l3.5-3.5a1 1 0 000-1.414l-3.5-3.5a1 1 0 00-1.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <a href="#" class="breadcrumb-link">Page</a>
+        </li>
+      </ul>
+    </div>
+    <!-- ============end============= -->
+    <!-- ===========Gio hang============== -->
+    <div class="wrapper">
+      <div class="cart-container">
+        <div class="cart-header">
+          <h1 class="cart-title">Giỏ hàng</h1>
+          <a href="#" class="back-link">
+            <span>Quay lại mua hàng</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+              <path d="M6 13.3635L10 9.14915L6 4.93478" stroke="#A0A4A8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+        </div>
+        <article class="cart-item">
+          <div class="item-details">
+            <input type="checkbox" id="checkbox-icon" class="checkbox-icon" />
+            <img src="./imgGioHang/Rectangle 830.png" alt="Product image" class="product-image" />
+            <div class="product-info">
+              <h2 class="product-name">Lorem ipsum dolor</h2>
+              <p class="product-color">Màu: Đen</p>
+            </div>
+          </div>
+          
+          <div class="price-quantity">
+            <div class="price-wrapper">
+              <span>220.000 đ</span>
+              <button class="delete-icon" aria-label="Remove item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38c72794ef335a6f538216f3738ea3e9e10b17601a7d345a1fb12d08d297817f?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+              </button>
+            </div>
+            
+            <div class="quantity-controls">
+              <button class="quantity-button" aria-label="Decrease quantity">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc428705c70a2540cf15475c5a093fa7eb708ca02e7a8d963fb045f8aec29d34?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" aria-label="Quantity" />
+              <button class="quantity-button" aria-label="Increase quantity">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c41bdc7e02a9f431d29f07373b4325f48c793a1abebee253e1ffbc662980012?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+              </button>
+            </div>
+          </div>
+        </article>
+      <hr>
+      <article class="cart-item">
+        <div class="item-details">
+          <input type="checkbox" id="checkbox-icon" class="checkbox-icon" />
+          <img src="./imgGioHang/Rectangle 831.png" alt="Product image" class="product-image" />
+          <div class="product-info">
+            <h2 class="product-name">Lorem ipsum dolor</h2>
+            <p class="product-color">Màu: Đen</p>
+          </div>
+        </div>
+        
+        <div class="price-quantity">
+          <div class="price-wrapper">
+            <span>220.000 đ</span>
+            <button class="delete-icon" aria-label="Remove item">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38c72794ef335a6f538216f3738ea3e9e10b17601a7d345a1fb12d08d297817f?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+            </button>
+          </div>
+          
+          <div class="quantity-controls">
+            <button class="quantity-button" aria-label="Decrease quantity">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc428705c70a2540cf15475c5a093fa7eb708ca02e7a8d963fb045f8aec29d34?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+            </button>
+            <input type="number" value="1" min="1" class="quantity-input" aria-label="Quantity" />
+            <button class="quantity-button" aria-label="Increase quantity">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c41bdc7e02a9f431d29f07373b4325f48c793a1abebee253e1ffbc662980012?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="" />
+            </button>
+          </div>
+        </div>
+      </article>
+      <hr>
+      <section class="cart-summary">
+        <div class="summary-details">
+          <p class="summary-label">Tổng tiền:</p>
+          <p class="summary-label">Giảm</p>
+          <p class="summary-label">Thanh toán</p>
+          <div class="shipping-option">
+            <input type="checkbox" id="circle-checkbox" class="circle-checkbox" />
+            <span>Miễn phí giao hàng</span>
+          </div>
+        </div>
+        
+        <div class="totals">
+          <p class="subtotal">15.070.000 đ</p>
+          <p class="discount">-5.070.000 đ</p>
+          <p class="final-total">17.070.000 đ</p>
+        </div>
+      </section>
+    </div>
+    <!-- Thong tin khach hang -->
+    <div class="wrapper">
+      <div class="customer-info-container">
+        <h2 class="section-title">Thông tin khách hàng</h2>
+        <div class="fui-radio-custom">
+          <div class="radio-item">
+              <input
+                  type="radio"
+                  name="option"
+                  class="radio-input"
+                  id="radio-1"
+                  value="value1"
+                  checked
+              />
+              <label for="radio-1" class="radio-label"></label>
+              <label for="radio-1">Nam</label>
+          </div>
+          <div class="radio-item">
+              <input
+                  type="radio"
+                  name="option"
+                  class="radio-input"
+                  id="radio-2"
+                  value="value2"
+              />
+              <label for="radio-2" class="radio-label"></label>
+              <label for="radio-2">Nữ</label>
+          </div>     
+      </div>
+     <div class="form-row">
+      <input type="text" class="form-input" placeholder="Họ và tên" aria-label="Họ và tên">
+      <input type="tel" class="form-input" placeholder="Số điện thoại" aria-label="Số điện thoại">
+    </div>
+    <textarea class="notes-input" placeholder="Ghi chú" aria-label="Ghi chú"></textarea>
+    <section class="delivery-section">
+      <h2 class="section-title">CHỌN ĐỊA CHỈ VÀ THỜI GIAN NHẬN HÀNG</h2>
+      
+      <div class="form-row">
+        <input 
+             list="locations"  id="location-selector"  name="location"  placeholder="Chọn thành phố..." class="location-selector"/>
+                   <datalist id="locations">
+                      <option value="Hồ Chí Minh">
+                      <option value="Hà Nội">
+                      <option value="Đà Nẵng">
+                      <option value="Cần Thơ">
+                      <option value="Nha Trang">
+                 </datalist>
+                 <input 
+                 list="districts" 
+                 id="district-selector" 
+                 name="district" 
+                 placeholder="Chọn Quận/Huyện..." 
+                 class="location-selector"
+               />
+               <datalist id="districts">
+                 <option value="Quận 1">
+                 <option value="Quận 2">
+                 <option value="Quận 3">
+                 <option value="Quận 7">
+                 <option value="Quận 9">
+                 <option value="Thủ Đức">
+               </datalist>
+      </div>
+  
+      <div class="form-row">
+        <input 
+            list="wards" 
+            id="ward" 
+            name="ward" 
+            placeholder="Chọn phường/xã..." 
+            class="ward-selector"
+        />
+        <datalist id="wards">
+            <option value="Phường 1">
+            <option value="Phường 2">
+            <option value="Phường 3">
+            <option value="Xã A">
+            <option value="Xã B">
+        </datalist>
+        <input type="text" class="form-input" placeholder="Số nhà" aria-label="Số nhà">
+    </div>    
+    </section> 
+    <!-- ============chọn phuuowng thức thanh toán========= -->
+    
+    <div class="container">
+      <div class="title">Chọn phương thức thanh toán</div>
+      <div class="row">
+          <div class="column">
+              <div class="option">
+                  <input type="checkbox" id="cash">
+                  <label for="cash">Thanh toán tiền mặt khi nhận hàng</label>
+              </div>
+              <div class="option">
+                  <input type="checkbox" id="bank">
+                  <label for="bank">Chuyển khoản ngân hàng</label>
+              </div>
+          </div>
+          <div class="column">
+              <div class="invoice-option">
+                <input type="checkbox" id="invoice">
+                  <label for="invoice">Xuất hóa đơn công ty (VAT 10%)</label>
+              </div>
+              <!-- Thêm một ô trống hoặc nội dung khác nếu cần -->
+              <div class="empty"></div>
+          </div>
+        </div>
+      </div>
+      <section class="company-info" role="region" aria-labelledby="company-info-title">
+        <div class="info-row">
+          <div class="company-details">
+            <h2 id="company-info-title" class="section-title">Thông tin công ty</h2>
+            <input type="text" class="input-field company-name" tabindex="0" aria-label="Tên công ty" placeholder="Tên công ty" />
+          </div>
+          <input type="text" class="input-field tax-id" tabindex="0" aria-label="Mã số thuế" placeholder="Mã số thuế" />
+        </div>
+        <input type="text" class="input-field address" tabindex="0" aria-label="Địa chỉ" placeholder="Địa chỉ" />
+      </section>
+     </div>
+     <!-- ==================Buton dat hang============ -->
+     <section class="order-section">
+      <a href="#" title="View Detail" class="fui-button-shiny-2">Đặt hàng</a>
+    </section>
+    <!-- ================Text=============== -->
+    <section class="partners-section" aria-labelledby="partners-title">
+      <h2 id="partners-title" class="partners-heading">ĐỐI TÁC CỦA CÂY XANH HALUTA</h2>
+    </section>
+    <!-- ================Logo các hãng đối tác============= -->
+    <section class="partners-container" aria-label="Partner logos">
+      <img src="./iconGioHang/Vector1.png" alt="" class="logo-arrow" />
+      
+      <div class="logo-wrapper">
+        <img src="./imgGioHang/logoFLC.png" alt="Partner logo" class="logo-image" />
+      </div>
+      
+      <div class="logo-wrapper-large">
+        <img src="./imgGioHang/logouni.png" alt="Partner logo" class="logo-image-large" />
+      </div>
+      
+      <div class="logo-wrapper-medium">
+        <img src="./imgGioHang/logovina.png" alt="Partner logo" class="logo-image-medium" />
+      </div>
+      
+      <div class="logo-wrapper-wide">
+        <img src="./imgGioHang/Logo-new-2018-1.png" alt="Partner logo" class="logo-image-wide" />
+      </div>
+      
+      <img src="./iconGioHang/Vector.png" alt="" class="logo-arrow" />
+    </section>
+    </div>
+  </div>
+  </div>
+  <section class="features-container" aria-label="Store Features">
+  <div class="features-grid">
+    <img 
+      src="./imgGioHang/spcl.png" 
+      alt="Quality Products Icon" 
+      class="feature-icon feature-icon-quality"
+    />
+    <h2 class="feature-title feature-title-quality">SẢN PHẨM CHẤT LƯỢNG</h2>
+    <div class="feature-divider" role="presentation"></div>
+
+    <img 
+      src="./imgGioHang/DichVu.png" 
+      alt="Professional Service Icon" 
+      class="feature-icon"
+    />
+    <h2 class="feature-title feature-title-service">DỊCH VỤ CHUYÊN NGHIỆP</h2>
+    <div class="feature-divider" role="presentation"></div>
+
+    <img 
+      src="./imgGioHang/truck 1.png" 
+      alt="Nationwide Shipping Icon" 
+      class="feature-icon"
+    />
+    <h2 class="feature-title feature-title-shipping">GIAO HÀNG TOÀN QUỐC</h2>
+    <div class="feature-divider" role="presentation"></div>
+
+    <img 
+      src="./imgGioHang/bao hanh.png" 
+      alt="Free Warranty Icon" 
+      class="feature-icon"
+    />
+    <h2 class="feature-title feature-title-warranty">MIỄN PHÍ BẢO HÀNH</h2>
+  </div>
+</section>
+<footer class="footer-container">
+  <section class="logo-section">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/84bb9976542ac06e52fad0e056f600c70b31ec51a6cfb5159ff489517c811e87?placeholderIfAbsent=true&apiKey=b924c87d51e0474f85758c8284b3b886" alt="Company Logo" class="company-logo" />
+    <h2 class="sales-hotline-title">HOTLINE BÁN HÀNG</h2>
+    <div class="phone-container">
+      <img src="./imgGioHang/fluent_video-person-call-16-filled.png" alt="Phone Icon" class="phone-icon" />
+      <a href="tel:0912250625" class="phone-number">03881659322</a>
+    </div>
+    <div class="support-info">
+      <p class="business-hours">( 08:00-17:00 tất cả các ngày trong tuần)</p>
+      <h2 class="customer-support-title">CHĂM SÓC KHÁCH HÀNG</h2>
+    </div>
+    <div class="support-phone">
+      <img src="./imgGioHang/fluent_video-person-call-16-filled.png" alt="Support Phone Icon" class="phone-icon" />
+      <a href="tel:0912250625" class="phone-number">0388169322</a>
+    </div>
+  </section>
+
+  <nav class="footer-section">
+    <h3 class="section-title">CHĂM SÓC KHÁCH HÀNG</h3>
+    <a href="#warranty" class="footer-link-first">Chính sách bảo hành</a>
+    <a href="#returns" class="footer-link">Chính sách đổi trả sản phẩm</a>
+    <a href="#faq" class="footer-link">Hỏi Đáp Mua Hàng Online</a>
+  </nav>
+
+  <nav class="footer-section">
+    <h3 class="section-title">CỬA HÀNG</h3>
+    <a href="#office-bins" class="footer-link-first">Thùng rác văn phòng</a>
+    <a href="#smart-bins" class="footer-link">Thùng rác thông minh</a>
+    <a href="#promotions" class="footer-link">Sản phẩm khuyến mại</a>
+  </nav>
+
+  <nav class="footer-section">
+    <h3 class="section-title">VỀ CHÚNG TÔI</h3>
+    <a href="#about" class="footer-link-first">Giới thiệu công ty</a>
+    <a href="#stores" class="footer-link">Hệ thống cửa hàng</a>
+    <a href="#careers" class="footer-link">Tuyển dụng</a>
+  </nav>
+
+  <section class="contact-section">
+    <h3 class="contact-title">LIÊN HỆ</h3>
+    <div class="address-container">
+      <img src="./imgGioHang/Location2.png" alt="Location Icon" class="contact-icon" />
+      <address class="address-text">
+        Khu phố phước mỹ tây, Thị Trấn phú thứ,
+        <br />
+        Phú yên
+      </address>
+    </div>
+    <div class="contact-info">
+      <img src="./imgGioHang/call.png" alt="Phone Icon" class="contact-icon" />
+      <a href="tel:0934878833">0388169322</a>
+    </div>
+    <div class="email-container">
+      <img src="./imgGioHang/Letter.png" alt="Email Icon" class="email-icon" />
+      <a href="mailto:contact@hempspahoian.com">12c8letuananh@gmail.com</a>
+    </div>
+  </section>
+</footer>
+<!-- =============================== -->
+<div class="fui-connect-list-vertical">
+  <ul class="connect-list">
+      <li class="connect-item btn-item">
+          <a href="#" class="connect-link">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+              >
+                  <g clip-path="url(#a)">
+                      <path
+                          fill="currentColor"
+                          d="m21.39 19.58-1.905 1.905s-4.95 2.122-12.02-4.95c-7.072-7.07-4.95-12.02-4.95-12.02L4.42 2.61a2 2 0 0 1 3.014.214l1.818 2.424a2 2 0 0 1-.186 2.615L7.464 9.465s0 1.414 2.829 4.242c2.828 2.829 4.243 2.829 4.243 2.829l1.601-1.602a2 2 0 0 1 2.615-.186l2.424 1.818a2 2 0 0 1 .214 3.014Z"
+                      ></path>
+                  </g>
+                  <defs>
+                      <clipPath id="a">
+                          <path
+                              fill="currentColor"
+                              d="M0 0h24v24H0z"
+                          ></path>
+                      </clipPath>
+                  </defs>
+              </svg>
+          </a>
+      </li>
+      <li class="connect-item btn-item">
+          <a href="#" class="connect-link">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+              >
+                  <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12c0 2.251.744 4.329 2 6v2.77a1 1 0 0 0 1.203.98L8 21.168A9.966 9.966 0 0 0 12 22Zm-5.295-8.293 2.75-3.93a1 1 0 0 1 1.35-.274l2.647 1.655a1 1 0 0 0 1.085-.016l2.172-1.448a.426.426 0 0 1 .586.6l-2.75 3.928a1 1 0 0 1-1.35.275l-2.648-1.655a1 1 0 0 0-1.084.016L7.29 14.306a.426.426 0 0 1-.586-.599Z"
+                      clip-rule="evenodd"
+                  ></path>
+              </svg>
+          </a>
+      </li>
+      <li class="connect-item btn-item">
+          <a href="#" class="connect-link">
+              <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+              >
+                  <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17 21.7143L19.4243 21.3679C20.9022 21.1568 22 19.891 22 18.3981V6.459C22 4.63335 20.383 3.23096 18.5757 3.48915L17 3.71426V21.7143Z"
+                      fill="currentColor"
+                  ></path>
+                  <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15 22L9 20V2L15 4V22Z"
+                      fill="currentColor"
+                  ></path>
+                  <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.57573 2.63203L7 2.28571V20.2857L5.42426 20.5108C3.61696 20.769 2 19.3666 2 17.541V5.60188C2 4.10893 3.09779 2.84316 4.57573 2.63203Z"
+                      fill="currentColor"
+                  ></path>
+              </svg>
+          </a>
+      </li>
+  </ul>
+  <div class="btn-show-connect btn-item">
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 320 512"
+      >
+          <path
+              d="M294.6 166.6L317.3 144 272 98.7l-22.6 22.6L160 210.7 70.6 121.4 48 98.7 2.7 144l22.6 22.6L114.7 256 25.4 345.4 2.7 368 48 413.3l22.6-22.6L160 301.3l89.4 89.4L272 413.3 317.3 368l-22.6-22.6L205.3 256l89.4-89.4z"
+          ></path>
+      </svg>
+  </div>
+  <script src="./assetsGioHang/css/Connect.js"></script>
+
+</div>
+  </body>
+
+</html>
